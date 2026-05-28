@@ -157,7 +157,7 @@ body {
   resize: none;
   min-height: 160px;
   line-height: 1.65;
-  overflow: hidden;
+  overflow-y: auto;
 }
 
 /* PHOTO SECTIONS */
@@ -419,14 +419,7 @@ body {
   setupPhotos("before-input", "before-grid", "before-empty");
   setupPhotos("after-input",  "after-grid",  "after-empty");
 
-  // Auto-expand textarea as user types
-  const textarea = document.getElementById("work-desc");
-  function autoExpand() {
-    textarea.style.height = "auto";
-    textarea.style.height = textarea.scrollHeight + "px";
-  }
-  textarea.addEventListener("input", autoExpand);
-  autoExpand();
+
 </script>
 </body>
 </html>
